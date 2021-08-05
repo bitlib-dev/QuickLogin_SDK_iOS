@@ -20,7 +20,7 @@
 通过[CocoaPods](https://cocoapods.org)获取。安装它，编辑Podfile文件并添加以下代码
 
 ```ruby
-pod 'QuickLogin-iOS-SDK'
+pod 'QuickLogin'
 ```
 
 
