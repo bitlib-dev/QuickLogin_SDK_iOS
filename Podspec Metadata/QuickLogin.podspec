@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'QuickLogin'
-  s.version          = '0.1.5'
-  s.summary          = 'A short description of QuickLogin.'
+  s.version          = '0.1.6'
+  s.summary          = '位库（Bitlib）一键登录'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,18 +21,19 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/bitlib-dev/QuickLogin'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/bitlib-dev/QuickLogin_SDK_iOS'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'bitlib-dev' => 'support@bitlib.cc' }
-  s.source           = { :git => '/Users/bindx/Desktop/NEW/QuickLogin', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/bitlib-dev/QuickLogin_SDK_iOS.git', :tag => s.version.to_s }
   
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files        = 'QuickLogin/Classes/**/*'
-  s.public_header_files = 'QuickLogin/Classes/Public/**/*.h'
+  s.vendored_frameworks = 'Lib/QuickLogin.framework'
+
+  s.frameworks = 'CoreTelephony', 'CFNetwork','SystemConfiguration'
+
   
 end
