@@ -1,13 +1,13 @@
 //
-//  WKUidHelper.h
+//  WKQuickLogin.h
 //  QuickLogin
 //
-//  Created by bitlib on 2021/3/23.
+//  Created by bitlib on 2020/10/1.
 //
 
 #import <Foundation/Foundation.h>
 
-typedef void (^WKResultListener)(NSDictionary * _Nonnull data);
+typedef void (^BitlibLoginResultListener)(NSDictionary * _Nonnull data);
 
 typedef NS_ENUM(NSUInteger, OperatorType) {
     OperatorTypeUnknow = 0, //未知
@@ -31,7 +31,6 @@ typedef NS_ENUM(NSUInteger, OperatorType) {
  @param timeout 超时时间
  @param listener 回调监听
  */
-- (void)getAccessCode:(double)timeout listener:(WKResultListener _Nonnull) listener;
-
+- (void)getAccessCode:(double)timeout listener:(BitlibLoginResultListener _Nonnull) listener;
 
 @end
