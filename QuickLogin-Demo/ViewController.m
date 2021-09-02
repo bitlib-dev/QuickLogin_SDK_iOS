@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <QuickLogin/WKQuickLogin.h>
 
+
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *getTokenBtn;
@@ -21,11 +22,11 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-//    [self getToken:nil];
+    
+//  Do any additional setup after loading the view, typically from a nib.
+//  [self getToken:nil];
     
 }
-
 
 //预取号
 - (IBAction)getToken:(id)sender {
@@ -44,6 +45,8 @@
         }];
     
 }
+
+
 
 
 - (void)didReceiveMemoryWarning{
