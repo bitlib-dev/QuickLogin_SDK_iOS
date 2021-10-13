@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'QuickLogin'
-  s.version          = '0.5.0'
+  s.version          = '0.5.1'
   s.summary          = '位库（Bitlib）一键登录'
 
 # This description is used to generate tags and improve search results.
@@ -30,6 +30,8 @@ TODO: Add long description of the pod here.
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   s.ios.deployment_target = '9.0'
+  
+  s.xcconfig = { 'OTHER_LDFLAGS' => '-Objc -all_load'}
 
   s.vendored_frameworks = 'Lib/QuickLogin.framework','Lib/EAccountApiSDK.framework','Lib/TYRZUISDK.framework'
   
