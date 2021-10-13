@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C4028C5926A96B4A00F907B4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4028C5826A96B4A00F907B4 /* SystemConfiguration.framework */; };
-		C4028C9626BBE13A00F907B4 /* QuickLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4028C9526BBE13A00F907B4 /* QuickLogin.framework */; };
 		C4028C9926BCF98300F907B4 /* QuickLogin.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C4028C9826BCF98300F907B4 /* QuickLogin.podspec */; };
 		C46E0A8926A96842001A84A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C46E0A8826A96842001A84A5 /* AppDelegate.m */; };
 		C46E0A8C26A96842001A84A5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C46E0A8B26A96842001A84A5 /* SceneDelegate.m */; };
@@ -17,12 +16,16 @@
 		C46E0A9426A96844001A84A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C46E0A9326A96844001A84A5 /* Assets.xcassets */; };
 		C46E0A9726A96844001A84A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C46E0A9526A96844001A84A5 /* LaunchScreen.storyboard */; };
 		C46E0A9A26A96844001A84A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C46E0A9926A96844001A84A5 /* main.m */; };
+		C4763DFA26FEE34400C5342C /* QuickLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4763DF926FEE34400C5342C /* QuickLogin.framework */; };
+		C4C5FF47270C0DF400018DA7 /* libz.1.2.8.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C5FF46270C0DF400018DA7 /* libz.1.2.8.tbd */; };
+		C4C5FF49270C0DFA00018DA7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C5FF48270C0DFA00018DA7 /* libc++.tbd */; };
+		C4D97DCC26EB27AF00625BC3 /* TYRZUISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D97DCB26EB27AF00625BC3 /* TYRZUISDK.framework */; };
+		C4F996D32716A43F00BA11BC /* EAccountApiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F996D22716A43F00BA11BC /* EAccountApiSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C4028C5626A96B2500F907B4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		C4028C5826A96B4A00F907B4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		C4028C9526BBE13A00F907B4 /* QuickLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QuickLogin.framework; sourceTree = "<group>"; };
 		C4028C9826BCF98300F907B4 /* QuickLogin.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QuickLogin.podspec; sourceTree = "<group>"; };
 		C46E0A8426A96842001A84A5 /* QuickLogin-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QuickLogin-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C46E0A8726A96842001A84A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -36,6 +39,11 @@
 		C46E0A9626A96844001A84A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C46E0A9826A96844001A84A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C46E0A9926A96844001A84A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C4763DF926FEE34400C5342C /* QuickLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QuickLogin.framework; sourceTree = "<group>"; };
+		C4C5FF46270C0DF400018DA7 /* libz.1.2.8.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.8.tbd; path = usr/lib/libz.1.2.8.tbd; sourceTree = SDKROOT; };
+		C4C5FF48270C0DFA00018DA7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		C4D97DCB26EB27AF00625BC3 /* TYRZUISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TYRZUISDK.framework; sourceTree = "<group>"; };
+		C4F996D22716A43F00BA11BC /* EAccountApiSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EAccountApiSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,8 +51,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4028C9626BBE13A00F907B4 /* QuickLogin.framework in Frameworks */,
+				C4C5FF49270C0DFA00018DA7 /* libc++.tbd in Frameworks */,
+				C4C5FF47270C0DF400018DA7 /* libz.1.2.8.tbd in Frameworks */,
+				C4F996D32716A43F00BA11BC /* EAccountApiSDK.framework in Frameworks */,
+				C4D97DCC26EB27AF00625BC3 /* TYRZUISDK.framework in Frameworks */,
 				C4028C5926A96B4A00F907B4 /* SystemConfiguration.framework in Frameworks */,
+				C4763DFA26FEE34400C5342C /* QuickLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +66,8 @@
 		C4028C5526A96B2500F907B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C4C5FF48270C0DFA00018DA7 /* libc++.tbd */,
+				C4C5FF46270C0DF400018DA7 /* libz.1.2.8.tbd */,
 				C4028C5826A96B4A00F907B4 /* SystemConfiguration.framework */,
 				C4028C5626A96B2500F907B4 /* CFNetwork.framework */,
 			);
@@ -63,7 +77,9 @@
 		C4028C9426BBE13A00F907B4 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				C4028C9526BBE13A00F907B4 /* QuickLogin.framework */,
+				C4F996D22716A43F00BA11BC /* EAccountApiSDK.framework */,
+				C4763DF926FEE34400C5342C /* QuickLogin.framework */,
+				C4D97DCB26EB27AF00625BC3 /* TYRZUISDK.framework */,
 			);
 			path = Lib;
 			sourceTree = SOURCE_ROOT;
@@ -263,7 +279,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -316,7 +332,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -347,7 +363,7 @@
 					"-all_load",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bitlib.uaid.QuickLogin-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.bitlib.Quicklogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -376,7 +392,7 @@
 					"-all_load",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bitlib.uaid.QuickLogin-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.bitlib.Quicklogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

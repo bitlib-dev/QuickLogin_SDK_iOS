@@ -18,10 +18,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [[WKQuickLogin getInstance] initWithKey:@"a2fab6b2d50a33215d77774ef0e58ba7" complete:^(NSDictionary * _Nonnull resultDic) {
+    // 初始化SDK
+    [[WKQuickLogin getInstance] initWithKey:@"c08eabb172cd4f61be07b7d361cf9fc7" complete:^(NSDictionary * _Nonnull resultDic) {
         NSLog(@"%@",resultDic);
-    }];
-    
+        
     return YES;
 }
 

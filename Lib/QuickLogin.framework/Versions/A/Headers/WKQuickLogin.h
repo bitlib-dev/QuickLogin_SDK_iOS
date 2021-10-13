@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^BitlibLoginResultListener)(NSDictionary * _Nonnull data);
+typedef void (^LoginResultListener)(NSDictionary * _Nonnull data);
 
 typedef NS_ENUM(NSUInteger, OperatorType) {
     OperatorTypeUnknow = 0, //未知
@@ -18,19 +18,25 @@ typedef NS_ENUM(NSUInteger, OperatorType) {
 
 @interface WKQuickLogin : NSObject
 
-+(WKQuickLogin *_Nonnull) getInstance;
+/// 单例
++ (WKQuickLogin *_Nonnull) getInstance;
 
-/**
- SDK初始化，只需执行一次初始化
- @param appKey 平台分配的appKey
- */
+
+/// 初始化SDK
+/// @param appKey 平台分配的appKey
+/// @param complete 回调监听
 - (void)initWithKey:(NSString *_Nullable)appKey  complete:(void (^_Nullable)(NSDictionary * _Nonnull resultDic))complete;
 
-/**
- 预授权获取token
- @param timeout 超时时间
- @param listener 回调监听
- */
-- (void)getAccessCode:(double)timeout listener:(BitlibLoginResultListener _Nonnull) listener;
+
+/// 设置重试次数（默认3次）
+/// @param retryCount 重试次数
+-(void)setRetryCount:(NSInteger)retryCount;
+
+
+/// 预授权获取token
+/// @param timeout 超时时间
+/// @param listener 回调监听
+- (void)getAccessCode:(double)timeout listener:(LoginResultListener _Nonnull) listener;
+
 
 @end
