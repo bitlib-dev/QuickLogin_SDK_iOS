@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'QuickLogin'
-  s.version          = '0.4.9'
+  s.version          = '0.5.0'
   s.summary          = '位库（Bitlib）一键登录'
 
 # This description is used to generate tags and improve search results.
@@ -35,6 +35,6 @@ TODO: Add long description of the pod here.
   
   s.libraries = 'c++', 'z.1.2.8'
 
-  s.frameworks = 'CoreTelephony', 'CFNetwork','SystemConfiguration'
+  s.frameworks = 'CoreTelephony', 'CFNetwork','SystemConfiguration','Network'
   
 end
