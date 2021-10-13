@@ -33,8 +33,8 @@ TODO: Add long description of the pod here.
 
   s.vendored_frameworks = 'Lib/QuickLogin.framework'
   
-  s.dependency = 'Lib/EAccountApiSDK.framework','Lib/TYRZUISDK.framework'
+  
 
-  s.frameworks = 'CoreTelephony', 'CFNetwork','SystemConfiguration','c++', 'z.1.2.8'
+  s.frameworks = 'CoreTelephony', 'CFNetwork','SystemConfiguration'
   
 end
