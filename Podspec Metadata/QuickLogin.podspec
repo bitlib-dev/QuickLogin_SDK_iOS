@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'QuickLogin'
-  s.version          = '0.4.7'
+  s.version          = '0.4.8'
   s.summary          = '位库（Bitlib）一键登录'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,9 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.vendored_frameworks = 'Lib/QuickLogin','Lib/EAccountApiSDK','Lib/TYRZUISDK'
+  s.vendored_frameworks = 'Lib/QuickLogin.framework'
+  
+  s.dependency = 'Lib/EAccountApiSDK.framework','Lib/TYRZUISDK.framework'
 
   s.frameworks = 'CoreTelephony', 'CFNetwork','SystemConfiguration','c++', 'z.1.2.8'
   
