@@ -35,6 +35,6 @@ TODO: Add long description of the pod here.
   
   s.libraries = 'c++', 'z.1.2.8'
 
-  s.frameworks = 'CoreTelephony', 'CFNetwork','SystemConfiguration',
+  s.frameworks = 'CoreTelephony', 'CFNetwork','SystemConfiguration'
   
 end
