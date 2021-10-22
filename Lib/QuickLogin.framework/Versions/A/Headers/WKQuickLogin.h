@@ -3,17 +3,19 @@
 //  QuickLogin
 //
 //  Created by bitlib on 2020/10/1.
-//
+//  SDKVERSION @"0.6.0"
 
 #import <Foundation/Foundation.h>
+#import "WKCustomModel.h"
+
+NS_ASSUME_NONNULL_BEGIN
 
 typedef void (^LoginResultListener)(NSDictionary * _Nonnull data);
 
 typedef NS_ENUM(NSUInteger, OperatorType) {
-    OperatorTypeUnknow = 0, //未知
     OperatorTypeCMCC   = 1, //移动
-    OperatorTypeCTCC   = 2, //电信
-    OperatorTypeCUCC   = 3  //联通
+    OperatorTypeCUCC   = 2, //联通
+    OperatorTypeCTCC   = 3  //电信
 };
 
 @interface WKQuickLogin : NSObject
@@ -21,22 +23,33 @@ typedef NS_ENUM(NSUInteger, OperatorType) {
 /// 单例
 + (WKQuickLogin *_Nonnull) getInstance;
 
-
 /// 初始化SDK
 /// @param appKey 平台分配的appKey
 /// @param complete 回调监听
-- (void)initWithKey:(NSString *_Nullable)appKey  complete:(void (^_Nullable)(NSDictionary * _Nonnull resultDic))complete;
-
-
-/// 设置重试次数（默认3次）
-/// @param retryCount 重试次数
--(void)setRetryCount:(NSInteger)retryCount;
-
+- (void)initWithKey:(NSString *)appKey  complete:(void (^)(NSDictionary *resultDic))complete;
 
 /// 预授权获取token
 /// @param timeout 超时时间
 /// @param listener 回调监听
-- (void)getAccessCode:(double)timeout listener:(LoginResultListener _Nonnull) listener;
+- (void)getAccessCode:(double)timeout listener:(LoginResultListener) listener;
 
+/// 获取指定运营商token（指定错误则无法正确返回token）
+/// @param timeout 超时时间
+/// @param type 运营商
+/// @param listener 回调监听
+- (void)getAccessCode:(double)timeout withOperator:(OperatorType)type listener:(LoginResultListener) listener;
+
+/// 显式获取token
+/// @param model 需要配置的model属性（控制器必传）
+/// @param timeout 超时时间
+/// @param listener 回调监听
+- (void)getAuthorizationWithModel:(WKCustomModel* )model timeout:(double)timeout listener:(LoginResultListener _Nonnull) listener;
+
+/// 关闭授权页面
+/// @param flag 是否开启动画
+/// @param completion 回调监听
+- (void)wk_dismissViewControllerAnimated: (BOOL)flag completion: (void (^ __nullable)(void))completion;
 
 @end
+
+NS_ASSUME_NONNULL_END

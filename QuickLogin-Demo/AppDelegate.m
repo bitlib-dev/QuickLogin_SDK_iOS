@@ -20,6 +20,7 @@
     
     // 初始化SDK
     [[WKQuickLogin getInstance] initWithKey:@"c08eabb172cd4f61be07b7d361cf9fc7" complete:^(NSDictionary * _Nonnull resultDic) {
+
         NSLog(@"%@",resultDic);
         
     }];

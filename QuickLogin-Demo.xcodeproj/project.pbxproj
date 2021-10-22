@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C4028C5926A96B4A00F907B4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4028C5826A96B4A00F907B4 /* SystemConfiguration.framework */; };
 		C4028C9926BCF98300F907B4 /* QuickLogin.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C4028C9826BCF98300F907B4 /* QuickLogin.podspec */; };
+		C46844D62721CC3100D7295E /* EAccountHYSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46844D52721CC3100D7295E /* EAccountHYSDK.framework */; };
 		C46E0A8926A96842001A84A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C46E0A8826A96842001A84A5 /* AppDelegate.m */; };
 		C46E0A8C26A96842001A84A5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C46E0A8B26A96842001A84A5 /* SceneDelegate.m */; };
 		C46E0A8F26A96842001A84A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C46E0A8E26A96842001A84A5 /* ViewController.m */; };
@@ -20,13 +21,14 @@
 		C4C5FF47270C0DF400018DA7 /* libz.1.2.8.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C5FF46270C0DF400018DA7 /* libz.1.2.8.tbd */; };
 		C4C5FF49270C0DFA00018DA7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C5FF48270C0DFA00018DA7 /* libc++.tbd */; };
 		C4D97DCC26EB27AF00625BC3 /* TYRZUISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D97DCB26EB27AF00625BC3 /* TYRZUISDK.framework */; };
-		C4F996D32716A43F00BA11BC /* EAccountApiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F996D22716A43F00BA11BC /* EAccountApiSDK.framework */; };
+		C4F9FE46271D4CD900288C78 /* WKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C4F9FE45271D4CD800288C78 /* WKResource.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C4028C5626A96B2500F907B4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		C4028C5826A96B4A00F907B4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C4028C9826BCF98300F907B4 /* QuickLogin.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QuickLogin.podspec; sourceTree = "<group>"; };
+		C46844D52721CC3100D7295E /* EAccountHYSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EAccountHYSDK.framework; sourceTree = "<group>"; };
 		C46E0A8426A96842001A84A5 /* QuickLogin-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QuickLogin-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C46E0A8726A96842001A84A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C46E0A8826A96842001A84A5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -43,7 +45,7 @@
 		C4C5FF46270C0DF400018DA7 /* libz.1.2.8.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.8.tbd; path = usr/lib/libz.1.2.8.tbd; sourceTree = SDKROOT; };
 		C4C5FF48270C0DFA00018DA7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		C4D97DCB26EB27AF00625BC3 /* TYRZUISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TYRZUISDK.framework; sourceTree = "<group>"; };
-		C4F996D22716A43F00BA11BC /* EAccountApiSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EAccountApiSDK.framework; sourceTree = "<group>"; };
+		C4F9FE45271D4CD800288C78 /* WKResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WKResource.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C46844D62721CC3100D7295E /* EAccountHYSDK.framework in Frameworks */,
 				C4C5FF49270C0DFA00018DA7 /* libc++.tbd in Frameworks */,
 				C4C5FF47270C0DF400018DA7 /* libz.1.2.8.tbd in Frameworks */,
-				C4F996D32716A43F00BA11BC /* EAccountApiSDK.framework in Frameworks */,
 				C4D97DCC26EB27AF00625BC3 /* TYRZUISDK.framework in Frameworks */,
 				C4028C5926A96B4A00F907B4 /* SystemConfiguration.framework in Frameworks */,
 				C4763DFA26FEE34400C5342C /* QuickLogin.framework in Frameworks */,
@@ -77,7 +79,8 @@
 		C4028C9426BBE13A00F907B4 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				C4F996D22716A43F00BA11BC /* EAccountApiSDK.framework */,
+				C4F9FE45271D4CD800288C78 /* WKResource.bundle */,
+				C46844D52721CC3100D7295E /* EAccountHYSDK.framework */,
 				C4763DF926FEE34400C5342C /* QuickLogin.framework */,
 				C4D97DCB26EB27AF00625BC3 /* TYRZUISDK.framework */,
 			);
@@ -188,6 +191,7 @@
 				C4028C9926BCF98300F907B4 /* QuickLogin.podspec in Resources */,
 				C46E0A9726A96844001A84A5 /* LaunchScreen.storyboard in Resources */,
 				C46E0A9426A96844001A84A5 /* Assets.xcassets in Resources */,
+				C4F9FE46271D4CD900288C78 /* WKResource.bundle in Resources */,
 				C46E0A9226A96842001A84A5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

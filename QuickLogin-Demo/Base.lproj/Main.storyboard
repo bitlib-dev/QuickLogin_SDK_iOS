@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,31 +24,65 @@
                                     <constraint firstAttribute="height" constant="45" id="ngV-Mb-1Gw"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="systemOrangeColor"/>
-                                <state key="normal" title="获取Token">
+                                <state key="normal" title="隐式登录">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
                                 <connections>
                                     <action selector="getToken:" destination="BYZ-38-t0r" eventType="touchUpInside" id="knr-0f-mBP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIl-fa-dco">
+                                <rect key="frame" x="45" y="151" width="325" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="26W-Sx-wKL"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="显式登录（窗口模式）">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="getTokenWithAuthVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Wz-uF-6bc"/>
+                                </connections>
+                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OF0-LZ-VYt">
-                                <rect key="frame" x="45" y="178" width="325" height="653"/>
+                                <rect key="frame" x="45" y="268" width="325" height="563"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" tag="2000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bG1-eO-iY3">
+                                <rect key="frame" x="45" y="203" width="325" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="iAj-FN-gHj"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="显式登录（全屏模式）">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="getTokenWithAuthVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ewO-KI-DzV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="bG1-eO-iY3" firstAttribute="top" secondItem="CIl-fa-dco" secondAttribute="bottom" constant="7" id="0Wy-Fk-RRZ"/>
                             <constraint firstItem="qN1-lt-0b8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="8Im-xr-DrM"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OF0-LZ-VYt" secondAttribute="bottom" constant="31" id="A5H-Jd-8ep"/>
-                            <constraint firstItem="OF0-LZ-VYt" firstAttribute="top" secondItem="qN1-lt-0b8" secondAttribute="bottom" constant="34" id="EX9-9R-3ca"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qN1-lt-0b8" secondAttribute="trailing" constant="44" id="FS3-xL-bOm"/>
+                            <constraint firstItem="bG1-eO-iY3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="Tvi-d1-GbH"/>
                             <constraint firstItem="qN1-lt-0b8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="aQt-nE-jHe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OF0-LZ-VYt" secondAttribute="trailing" constant="44" id="fIa-sz-McI"/>
-                            <constraint firstItem="OF0-LZ-VYt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="jZa-yO-CKF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OF0-LZ-VYt" secondAttribute="trailing" constant="44" id="afm-BL-OM1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CIl-fa-dco" secondAttribute="trailing" constant="44" id="bUA-N0-KVg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bG1-eO-iY3" secondAttribute="trailing" constant="44" id="bnP-tp-w92"/>
+                            <constraint firstItem="CIl-fa-dco" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="fgz-AO-UYy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OF0-LZ-VYt" secondAttribute="bottom" constant="31" id="mFa-mF-Uq9"/>
+                            <constraint firstItem="OF0-LZ-VYt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="nv2-Fa-zOB"/>
+                            <constraint firstItem="OF0-LZ-VYt" firstAttribute="top" secondItem="bG1-eO-iY3" secondAttribute="bottom" constant="20" id="rSn-i3-iJa"/>
+                            <constraint firstItem="CIl-fa-dco" firstAttribute="top" secondItem="qN1-lt-0b8" secondAttribute="bottom" constant="7" id="vgY-cC-tW5"/>
                         </constraints>
                     </view>
                     <connections>
