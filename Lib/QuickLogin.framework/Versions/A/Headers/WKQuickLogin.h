@@ -3,25 +3,29 @@
 //  QuickLogin
 //
 //  Created by bitlib on 2020/10/1.
-//  SDKVERSION @"0.6.0"
+//  SDKVERSION @"0.6.7"
 
 #import <Foundation/Foundation.h>
-#import "WKCustomModel.h"
+@class WKCustomModel;
 
 NS_ASSUME_NONNULL_BEGIN
 
 typedef void (^LoginResultListener)(NSDictionary * _Nonnull data);
 
 typedef NS_ENUM(NSUInteger, OperatorType) {
-    OperatorTypeCMCC   = 1, //移动
-    OperatorTypeCUCC   = 2, //联通
-    OperatorTypeCTCC   = 3  //电信
+    OperatorTypeUnkonw   = 0, //未知
+    OperatorTypeCMCC     = 1, //移动
+    OperatorTypeCUCC     = 2, //联通
+    OperatorTypeCTCC     = 3  //电信
 };
 
 @interface WKQuickLogin : NSObject
 
 /// 单例
 + (WKQuickLogin *_Nonnull) getInstance;
+
+/// 获取当前流量卡运营商
++ (OperatorType)operatorType;
 
 /// 初始化SDK
 /// @param appKey 平台分配的appKey
