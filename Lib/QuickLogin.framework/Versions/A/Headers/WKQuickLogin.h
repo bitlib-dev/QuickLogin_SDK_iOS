@@ -25,7 +25,7 @@ typedef NS_ENUM(NSUInteger, OperatorType) {
 + (WKQuickLogin *_Nonnull) getInstance;
 
 /// 获取当前流量卡运营商
-+ (OperatorType)operatorType;
++ (OperatorType) getOperatorType;
 
 /// 初始化SDK
 /// @param appKey 平台分配的appKey
