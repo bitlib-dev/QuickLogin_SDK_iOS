@@ -27,7 +27,8 @@
     [super viewDidLoad];
 }
 
-//隐式登录
+#pragma mark 隐式登录
+
 - (IBAction)getToken:(id)sender {
     [[WKQuickLogin getInstance] getAccessCode:8000 listener:^(NSDictionary * _Nonnull data) {
         NSData * jsonData = [NSJSONSerialization dataWithJSONObject:data options:NSJSONWritingPrettyPrinted error:nil];
@@ -40,7 +41,8 @@
     }];
 }
 
-//显式登录
+#pragma mark 显式登录
+
 - (IBAction)getTokenWithAuthVC:(UIButton *)sender{
     // 加载LoadingView
     loadView = [self loadingView];
@@ -48,6 +50,7 @@
     
     WKCustomModel *model = [WKCustomModel new];
     
+    // 当前VC
     model.currentVC = self;
     
     // 隐私协议距离屏幕左右边距
