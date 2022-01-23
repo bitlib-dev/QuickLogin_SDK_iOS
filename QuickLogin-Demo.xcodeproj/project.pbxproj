@@ -367,7 +367,7 @@
 					"-all_load",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cc.bitlib.Quicklogin;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.bitlib.quicklogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -396,7 +396,7 @@
 					"-all_load",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cc.bitlib.Quicklogin;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.bitlib.quicklogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

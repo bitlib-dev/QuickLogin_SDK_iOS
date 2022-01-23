@@ -27,17 +27,28 @@
     [super viewDidLoad];
 }
 
+- (void)pringLog:(NSDictionary *)logDic{
+    NSData * jsonData = [NSJSONSerialization dataWithJSONObject:logDic options:NSJSONWritingPrettyPrinted error:nil];
+    NSString * jsonStr = [[NSString alloc]initWithData:jsonData encoding:NSUTF8StringEncoding];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.textView.text = jsonStr;
+        NSLog(@"%@",jsonStr);
+    });
+}
+
+- (IBAction)preLogin:(id)sender {
+    [[WKQuickLogin getInstance] preLogin:8000 listener:^(NSDictionary * _Nonnull data) {
+        [self pringLog:data];
+    }];
+}
+
+
 #pragma mark 隐式登录
 
 - (IBAction)getToken:(id)sender {
     [[WKQuickLogin getInstance] getAccessCode:8000 listener:^(NSDictionary * _Nonnull data) {
-        NSData * jsonData = [NSJSONSerialization dataWithJSONObject:data options:NSJSONWritingPrettyPrinted error:nil];
-        NSString * jsonStr = [[NSString alloc]initWithData:jsonData encoding:NSUTF8StringEncoding];
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            self.textView.text = jsonStr;
-            NSLog(@"%@",jsonStr);
-        });
+        [self pringLog:data];
     }];
 }
 
@@ -167,12 +178,7 @@
         }];
         
         // 输出日志
-        NSData * jsonData = [NSJSONSerialization dataWithJSONObject:data options:NSJSONWritingPrettyPrinted error:nil];
-        NSString * jsonStr = [[NSString alloc]initWithData:jsonData encoding:NSUTF8StringEncoding];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            self.textView.text = jsonStr;
-            NSLog(@"%@",jsonStr);
-        });
+        [self pringLog:data];
     }];
 }
 

@@ -3,7 +3,7 @@
 //  QuickLogin
 //
 //  Created by bitlib on 2020/10/1.
-//  SDKVERSION @"0.7.3"
+//  SDKVERSION @"1.0.4"
 
 #import <Foundation/Foundation.h>
 @class WKCustomModel;
@@ -30,7 +30,11 @@ typedef NS_ENUM(NSUInteger, OperatorType) {
 /// 初始化SDK
 /// @param appKey 平台分配的appKey
 /// @param complete 回调监听
-- (void)initWithKey:(NSString *)appKey  complete:(void (^)(NSDictionary *resultDic))complete;
+- (void)initWithKey:(NSString *)appKey complete:(void (^)(NSDictionary *resultDic))complete;
+
+/// 预取号
+/// @param listener 回调监听
+- (void)preLogin:(double)timeout listener:(LoginResultListener) listener;
 
 /// 预授权获取token
 /// @param timeout 超时时间
@@ -53,6 +57,10 @@ typedef NS_ENUM(NSUInteger, OperatorType) {
 /// @param flag 是否开启动画
 /// @param completion 回调监听
 - (void)wk_dismissViewControllerAnimated: (BOOL)flag completion: (void (^ __nullable)(void))completion;
+
+/// 删除取号缓存数据
+/// @return YES：有缓存已执行删除操作，NO：无缓存不执行删除操作
+- (BOOL)deleteScrip;
 
 @end
 
