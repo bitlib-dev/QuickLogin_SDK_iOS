@@ -19,7 +19,7 @@
     // Override point for customization after application launch.
     
     // 初始化SDK
-    [[WKQuickLogin getInstance] initWithKey:@"bf49d4a3f4ff7e0aefe1efe97c57729d" complete:^(NSDictionary * _Nonnull resultDic) {
+    [[WKQuickLogin getInstance] initWithKey:@"c08eabb172cd4f61be07b7d361cf9fc7" complete:^(NSDictionary * _Nonnull resultDic) {
         NSLog(@"%@",resultDic);
     }];
     return YES;
