@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'QuickLogin'
-  s.version          = '1.0.4'
+  s.version          = '1.0.5.3'
   s.summary          = '位库（Bitlib）一键登录'
 
 # This description is used to generate tags and improve search results.
