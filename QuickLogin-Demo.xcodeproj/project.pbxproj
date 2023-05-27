@@ -18,9 +18,9 @@
 		C46E0A9726A96844001A84A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C46E0A9526A96844001A84A5 /* LaunchScreen.storyboard */; };
 		C46E0A9A26A96844001A84A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C46E0A9926A96844001A84A5 /* main.m */; };
 		C4763DFA26FEE34400C5342C /* QuickLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4763DF926FEE34400C5342C /* QuickLogin.framework */; };
+		C4951DE72A22124A004E182B /* TYRZUISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4951DE62A22124A004E182B /* TYRZUISDK.framework */; };
 		C4C5FF47270C0DF400018DA7 /* libz.1.2.8.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C5FF46270C0DF400018DA7 /* libz.1.2.8.tbd */; };
 		C4C5FF49270C0DFA00018DA7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C5FF48270C0DFA00018DA7 /* libc++.tbd */; };
-		C4D97DCC26EB27AF00625BC3 /* TYRZUISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D97DCB26EB27AF00625BC3 /* TYRZUISDK.framework */; };
 		C4F9FE46271D4CD900288C78 /* WKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C4F9FE45271D4CD800288C78 /* WKResource.bundle */; };
 /* End PBXBuildFile section */
 
@@ -42,9 +42,9 @@
 		C46E0A9826A96844001A84A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C46E0A9926A96844001A84A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C4763DF926FEE34400C5342C /* QuickLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QuickLogin.framework; sourceTree = "<group>"; };
+		C4951DE62A22124A004E182B /* TYRZUISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TYRZUISDK.framework; sourceTree = "<group>"; };
 		C4C5FF46270C0DF400018DA7 /* libz.1.2.8.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.8.tbd; path = usr/lib/libz.1.2.8.tbd; sourceTree = SDKROOT; };
 		C4C5FF48270C0DFA00018DA7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		C4D97DCB26EB27AF00625BC3 /* TYRZUISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TYRZUISDK.framework; sourceTree = "<group>"; };
 		C4F9FE45271D4CD800288C78 /* WKResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WKResource.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,8 +56,8 @@
 				C46844D62721CC3100D7295E /* EAccountHYSDK.framework in Frameworks */,
 				C4C5FF49270C0DFA00018DA7 /* libc++.tbd in Frameworks */,
 				C4C5FF47270C0DF400018DA7 /* libz.1.2.8.tbd in Frameworks */,
-				C4D97DCC26EB27AF00625BC3 /* TYRZUISDK.framework in Frameworks */,
 				C4028C5926A96B4A00F907B4 /* SystemConfiguration.framework in Frameworks */,
+				C4951DE72A22124A004E182B /* TYRZUISDK.framework in Frameworks */,
 				C4763DFA26FEE34400C5342C /* QuickLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,10 +79,10 @@
 		C4028C9426BBE13A00F907B4 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				C4951DE62A22124A004E182B /* TYRZUISDK.framework */,
 				C4F9FE45271D4CD800288C78 /* WKResource.bundle */,
 				C46844D52721CC3100D7295E /* EAccountHYSDK.framework */,
 				C4763DF926FEE34400C5342C /* QuickLogin.framework */,
-				C4D97DCB26EB27AF00625BC3 /* TYRZUISDK.framework */,
 			);
 			path = Lib;
 			sourceTree = SOURCE_ROOT;
