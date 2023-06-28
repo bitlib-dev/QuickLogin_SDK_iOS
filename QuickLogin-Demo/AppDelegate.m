@@ -20,6 +20,10 @@
     
     // 初始化SDK
     [[WKQuickLogin getInstance] initWithKey:@"c08eabb172cd4f61be07b7d361cf9fc7" complete:^(NSDictionary * _Nonnull resultDic) {
+        Class config1 = NSClassFromString(@"BitlibLoginMultConfig");
+        SEL setAppinfo1 = NSSelectorFromString(@"appInfo");
+        NSDictionary *dictt = [config1 performSelector:setAppinfo1];
+        NSLog(@"%@",dictt);
         NSLog(@"%@",resultDic);
     }];
     return YES;
